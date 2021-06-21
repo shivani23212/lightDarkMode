@@ -25,11 +25,11 @@ body {
 
 .buttons {
     position: relative; /* relative to parent */
-    left: 0%;
+    left: 30%;
     top: 50px;
 }
 
-#light-btn, #dark-btn {
+#mode-btn, #dark-btn {
     padding: 14px 28px;
     background: none;
     border: 2px solid var(--text-color, black);
@@ -38,11 +38,11 @@ body {
     font-size: 20px;
 }
 
-#light-btn:hover, #dark-btn:hover {
+#mode-btn:hover, #dark-btn:hover {
     background: var(--button-highlight, #e7e7e7);
 }
 
-#light-btn {
+#mode-btn {
     margin-right: 100px;
 }
 
