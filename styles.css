@@ -2,13 +2,14 @@
     --background-color:white;
     --text-color:black;
     --button-highlight: #e7e7e7;
-    --background-image: url("light_image.png");
+    --background-image: url("light_image2.jpg");
+    --button-background: none;
 }
 
 body {
     background-color: var(--background-color, white);
     background-image: var(--background-image, white);
-    background-size: auto; /* scales the image so that the background area is completely covered by the background image while maintaining the aspect ratio */
+    background-size: cover; /* scales the image so that the background area is completely covered by the background image while maintaining the aspect ratio */
     background-repeat: no-repeat;
     background-position: center top;
     transition: background-image 1s;
@@ -20,10 +21,11 @@ body {
     left: 50%;
     /* translates by 50% of box height & width */
     transform: translate(-50%, -50%); 
+    width: 1000px;
 }
 
 #title {
-    margin-left: 17%;
+    margin-left: 25%;
     color: var(--text-color, black);
     font-size: 7em;
     font-family: Arial, sans-serif;
@@ -36,25 +38,26 @@ body {
     font-family: Arial, sans-serif;
     margin-bottom: 0px;
     margin-top: 0px;
+    margin-left:110px;
 }
 
 
 .buttons {
-    position: relative; /* relative to parent */
-    left: 36%;
-    top: 50px;
+    position: absolute; /* relative to parent */
+    left: 40%;
+    top: 120%;
 }
 
-#mode-btn, #dark-btn {
+#mode-btn{
     padding: 14px 28px;
-    background: none;
+    background: var(--button-background, none);
     border: 2px solid var(--text-color, black);
     border-radius: 5px;
     color: var(--text-color, black);
     font-size: 20px;
 }
 
-#mode-btn:hover, #dark-btn:hover {
+#mode-btn:hover {
     background: var(--button-highlight, #e7e7e7);
 }
 
@@ -62,4 +65,22 @@ body {
     margin-right: 100px;
 }
 
+input[type=text] {
+    font-size: 2.1em;
+    width: 300px;
+    margin-top:14px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #000000;
+}
+
+h2 {
+    display: inline-block;
+    float: left;
+}
+
+span {
+    display: block; /* Allows input to span whole of line from point it was created */
+    margin: 5px 0px 5px 100px;
+  }
 
