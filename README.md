@@ -1,2 +1,2 @@
 # Light-Dark Mode
-Random HTML colour generator
+Changes colour of webpage between light and dark mode.
