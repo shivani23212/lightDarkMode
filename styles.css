@@ -1,0 +1,49 @@
+:root {
+    --background-color:white;
+    --text-color:black;
+    --button-highlight: #e7e7e7;
+}
+
+body {
+    background-color: var(--background-color, white);
+}
+
+.box  {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    /* translates by 50% of box height & width */
+    transform: translate(-50%, -50%); 
+}
+
+#title {
+    color: var(--text-color, black);
+    font-size: 5em;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    position: relative; /* relative to parent */
+    left: 0%;
+    top: 50px;
+}
+
+#light-btn, #dark-btn {
+    padding: 14px 28px;
+    background: none;
+    border: 2px solid var(--text-color, black);
+    border-radius: 5px;
+    color: var(--text-color, black);
+    font-size: 20px;
+}
+
+#light-btn:hover, #dark-btn:hover {
+    background: var(--button-highlight, #e7e7e7);
+}
+
+#light-btn {
+    margin-right: 100px;
+}
+
+
