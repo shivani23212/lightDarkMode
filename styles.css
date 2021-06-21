@@ -8,7 +8,9 @@
 body {
     background-color: var(--background-color, white);
     background-image: var(--background-image, white);
-    background-size: cover; /* scales the image so that the background area is completely covered by the background image while maintaining the aspect ratio */
+    background-size: auto; /* scales the image so that the background area is completely covered by the background image while maintaining the aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center top;
     transition: background-image 1s;
 }
 
@@ -21,15 +23,25 @@ body {
 }
 
 #title {
+    margin-left: 17%;
     color: var(--text-color, black);
-    font-size: 5em;
+    font-size: 7em;
     font-family: Arial, sans-serif;
     margin-bottom: 0px;
 }
 
+#message {
+    color: var(--text-color, black);
+    font-size: 4em;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
 .buttons {
     position: relative; /* relative to parent */
-    left: 30%;
+    left: 36%;
     top: 50px;
 }
 
