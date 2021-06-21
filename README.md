@@ -1,2 +1,2 @@
-# colourFlipper
+# LightDarkMode
 Random HTML colour generator
