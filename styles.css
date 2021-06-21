@@ -2,15 +2,19 @@
     --background-color:white;
     --text-color:black;
     --button-highlight: #e7e7e7;
+    --background-image: url("light_image.png");
 }
 
 body {
     background-color: var(--background-color, white);
+    background-image: var(--background-image, white);
+    background-size: cover; /* scales the image so that the background area is completely covered by the background image while maintaining the aspect ratio */
+    transition: background-image 1s;
 }
 
 .box  {
     position: fixed;
-    top: 35%;
+    top: 45%;
     left: 50%;
     /* translates by 50% of box height & width */
     transform: translate(-50%, -50%); 
