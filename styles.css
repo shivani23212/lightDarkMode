@@ -74,6 +74,11 @@ input[type=text] {
     border-bottom: 4px solid #000000;
 }
 
+input[type=image] {
+    width: 20px;
+    height: 20px;
+}
+
 h2 {
     display: inline-block;
     float: left;
